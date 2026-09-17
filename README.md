@@ -1,24 +1,24 @@
 # VetPass — Historial Saludable, Mascotas Más Felices
 
-VetPass es una plataforma web y móvil diseñada para digitalizar integralmente la cartilla de vacunación y el historial clínico veterinario de perros y gatos[cite: 1]. Su propósito es eliminar la dependencia de documentos físicos en papel propensos a extravío o deterioro físico, centralizando el expediente sanitario del animal entre la clínica veterinaria tratante y el dueño responsable[cite: 1].
+VetPass es una plataforma web y móvil diseñada para digitalizar integralmente la cartilla de vacunación y el historial clínico veterinario de perros y gatos. Su propósito es eliminar la dependencia de documentos físicos en papel propensos a extravío o deterioro físico, centralizando el expediente sanitario del animal entre la clínica veterinaria tratante y el dueño responsable.
 
 ---
 
 ## Descripción del Proyecto
 
-En el contexto veterinario actual, la información de las mascotas suele dividirse entre fichas manuscritas archivadas en consultorios y cartillas físicas en manos de los dueños[cite: 1]. VetPass unifica estos flujos:
+En el contexto veterinario actual, la información de las mascotas suele dividirse entre fichas manuscritas archivadas en consultorios y cartillas físicas en manos de los dueños. VetPass unifica estos flujos:
 
-* **Para las clínicas:** Una solución web donde el personal veterinario registra consultas médicas, aplica esquemas de vacunación estandarizados y genera recetas médicas de manera estructurada[cite: 1].
-* **Para los dueños de mascotas:** Una aplicación móvil de solo lectura que permite auditar en tiempo real el estado sanitario (vacunas al día, pendientes o vencidas), revisar recetas e historial de atenciones clínicas en cualquier momento[cite: 1].
+* **Para las clínicas:** Una solución web donde el personal veterinario registra consultas médicas, aplica esquemas de vacunación estandarizados y genera recetas médicas de manera estructurada.
+* **Para los dueños de mascotas:** Una aplicación móvil de solo lectura que permite auditar en tiempo real el estado sanitario (vacunas al día, pendientes o vencidas), revisar recetas e historial de atenciones clínicas en cualquier momento.
 
 ---
 
 ## Características Técnicas
 
-* **Generación Automática de Cartillas:** Creación inmediata del calendario de vacunación según la especie (canina o felina) a partir de una plantilla predefinida[cite: 1].
+* **Generación Automática de Cartillas:** Creación inmediata del calendario de vacunación según la especie (canina o felina) a partir de una plantilla predefinida.
 * **Control de Reglas Sanitarias:** Validación de edad mínima e intervalos obligatorios entre dosis para prevenir errores de registro durante la atención.
-* **Control de Acceso Basado en Roles (RBAC):** Separación estricta de privilegios: permisos de edición y registro reservados exclusivamente para el personal clínico certificado, y permisos de consulta para el dueño de la mascota[cite: 1].
-* **Emisión de Recetas Digitales:** Módulo para emitir y consultar indicaciones terapéuticas vinculadas a cada encuentro clínico[cite: 1].
+* **Control de Acceso Basado en Roles (RBAC):** Separación estricta de privilegios: permisos de edición y registro reservados exclusivamente para el personal clínico certificado, y permisos de consulta para el dueño de la mascota.
+* **Emisión de Recetas Digitales:** Módulo para emitir y consultar indicaciones terapéuticas vinculadas a cada encuentro clínico.
 * **Soporte Multilingüe (i18n):** Módulo de internacionalización con alternancia fluida entre Español (`es`) e Inglés (`en`).
 * **Diseño Responsivo y Accesible:** Interfaz adaptable a pantallas de escritorio, tablets y dispositivos móviles con scroll interactivo y mapas embebidos.
 
