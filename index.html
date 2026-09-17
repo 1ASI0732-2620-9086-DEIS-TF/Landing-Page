@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetPass - Plataforma Veterinaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Enlace actualizado a la carpeta css/ -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="img/VetPass_logo.png" alt="VetPass Logo">
+            </a>
+            <nav class="nav-menu">
+                <a href="#plataforma">Plataforma</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#como-funciona">¿Cómo funciona?</a>
+                <a href="#planes">Planes</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#sectores">Sectores</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="nav-lang">
+                <span class="lang-btn" data-lang="es"><img src="https://flagcdn.com/w20/es.png" alt="ES"> ES</span>
+    <span class="lang-btn" data-lang="en"><img src="https://flagcdn.com/w20/us.png" alt="EN"> EN</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Gestión <span class="highlight-orange">Digital</span> de tu Clínica Veterinaria</h1>
+            <p>VetPass es una plataforma web y móvil que digitaliza la cartilla de vacunación y el historial veterinario de perros y gatos. Elimina la dependencia de documentos físicos expuestos a pérdida o deterioro.</p>
+            <a href="https://tu-aplicacion-web.com" target="_blank" rel="noopener noreferrer" class="btn btn-white">Ver Demo</a>
+        </div>
+    </section>
+
+    <!-- PROPUESTA DE VALOR -->
+    <section id="plataforma" class="section">
+        <div class="section-header">
+            <h2>Plataforma y propuesta de valor</h2>
+            <div class="divider"></div>
+            <p>VetPass centraliza la información clínica para que dejes de tomar decisiones médicas basadas en antecedentes incompletos.</p>
+        </div>
+        <div class="container grid-3">
+            <div class="card basic-card">
+                <span class="card-label">PROBLEMA</span>
+                <p>Las clínicas gestionan historiales en papel y cartillas que se deterioran. El expediente queda dividido entre la clínica y el dueño de la mascota.</p>
+            </div>
+            <div class="card basic-card">
+                <span class="card-label">PARA QUIÉN</span>
+                <p>Clínicas veterinarias pequeñas y medianas en Perú, personal de recepción, y dueños de perros y gatos.</p>
+            </div>
+            <div class="card basic-card">
+                <span class="card-label">BENEFICIO</span>
+                <p>El personal de la clínica registra información desde una app web y el dueño la consulta desde una app móvil en cualquier momento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTADOS (Métricas) -->
+    <section class="section bg-light">
+        <div class="section-header">
+            <h2>Resultados que Puedes Medir</h2>
+            <div class="divider"></div>
+            <p>Impacto real en la calidad de atención y reducción de tiempos en consulta.</p>
+        </div>
+        <div class="container grid-3">
+            <div class="card metric-card">
+                <span class="badge">-100%</span>
+                <h3>Pérdida de Información</h3>
+                <p>Sustituye la cartilla de vacunación física por un respaldo digital inalterable y siempre accesible.</p>
+            </div>
+            <div class="card metric-card">
+                <span class="badge">Aut</span>
+                <h3>Esquemas Automáticos</h3>
+                <p>Genera automáticamente la cartilla a partir del esquema de la especie (canina o felina).</p>
+            </div>
+            <div class="card metric-card">
+                <span class="badge">24/7</span>
+                <h3>Visibilidad Permanente</h3>
+                <p>El dueño puede consultar perfil, cartillas y recetas asociadas a la atención desde su móvil.</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- CARACTERÍSTICAS -->
+<section id="caracteristicas" class="section split-bg-section">
+    <!-- Imagen lateral derecha -->
+    <div class="features-side-image">
+        <!-- Reemplaza "clinica.jpg" por el nombre de tu archivo en la carpeta img/ -->
+        <img src="img/vet04.jpg" alt="Atención veterinaria">
+    </div>
+
+    <div class="container relative-content">
+        <div class="section-header">
+            <span class="subtitle-blue">FUNCIONALIDADES</span>
+            <h2>Características Principales</h2>
+            <div class="divider"></div>
+            <p>Nuestra plataforma centraliza, automatiza y protege la información de tus pacientes en un solo lugar.</p>
+        </div>
+        <div class="features-grid">
+            <div class="card feature-card">
+                <i class="fa-solid fa-notes-medical"></i>
+                <h3>Historial Clínico</h3>
+                <p>Permite registrar atenciones del historial veterinario mediante un formato preestablecido[cite: 1].</p>
+            </div>
+            <div class="card feature-card">
+                <i class="fa-solid fa-bell"></i>
+                <h3>Alertas Inteligentes</h3>
+                <p>Determina el estado de la cartilla (al día, pendiente o vencida)[cite: 1].</p>
+            </div>
+            <div class="card feature-card">
+                <i class="fa-solid fa-file-prescription"></i>
+                <h3>Recetas Digitales</h3>
+                <p>Emisión de recetas médicas asociadas a una atención[cite: 1].</p>
+            </div>
+            <div class="card feature-card">
+                <i class="fa-solid fa-shield-dog"></i>
+                <h3>Control de Vacunas</h3>
+                <p>Validación de edad mínima e intervalos entre dosis para evitar errores.</p>
+            </div>
+            <div class="card feature-card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Aplicación Móvil</h3>
+                <p>Acceso de solo lectura para el dueño, permitiéndole consultar historial en todo momento[cite: 1].</p>
+            </div>
+            <div class="card feature-card">
+                <i class="fa-solid fa-lock"></i>
+                <h3>Seguridad y Permisos</h3>
+                <p>Registro y edición de información clínica atribución exclusiva del personal[cite: 1].</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="section">
+        <div class="section-header">
+            <h2>¿Cómo Funciona?</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container how-it-works-container">
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-text">
+                        <h3>Registra la Mascota</h3>
+                        <p>Ingresa datos y genera automáticamente la cartilla de vacunación según especie.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-text">
+                        <h3>Atención Clínica</h3>
+                        <p>El veterinario registra vacunas y detalles en el historial web.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-text">
+                        <h3>Sincronización</h3>
+                        <p>Los datos se guardan en la nube de forma segura y estructurada.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-text">
+                        <h3>Consulta Móvil</h3>
+                        <p>El dueño revisa recetas y el estado de la cartilla desde la app.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mockup-image">
+                <img src="img/vet02.jpg" alt="Mockup de Plataforma Web y App Móvil">
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGÍA Y CONFIANZA -->
+    <section class="section bg-light">
+        <div class="section-header">
+            <h2>Tecnología y confianza</h2>
+            <div class="divider"></div>
+            <p>Construida con altos estándares de calidad y diseño centrado en el usuario.</p>
+        </div>
+        <div class="container grid-3">
+            <div class="card basic-card">
+                <h3>Plataforma Web</h3>
+                <p>Interfaz optimizada para el flujo de trabajo en la recepción y consultorio de clínicas independientes.</p>
+            </div>
+            <div class="card basic-card">
+                <h3>Arquitectura Cloud</h3>
+                <p>Base de datos segura que garantiza respaldo inmediato de historiales y esquemas de vacunación.</p>
+            </div>
+            <div class="card basic-card">
+                <h3>App Móvil Nativa</h3>
+                <p>Diseñada específicamente para dueños de mascotas, con UI intuitiva para consulta rápida de recetas y vacunas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANES -->
+    <section id="planes" class="section">
+        <div class="section-header">
+            <h2>Modelos de Negocio</h2>
+            <div class="divider"></div>
+            <p>Planes adaptados a clínicas veterinarias independientes.</p>
+        </div>
+        <div class="container pricing-grid">
+            <div class="card pricing-card">
+                <h3>Consultorio</h3>
+                <p class="price-subtitle">Para veterinarios independientes</p>
+                <div class="price"><span>S/</span>100<span>/mes</span></div>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> 1 Médico Veterinario</li>
+                    <li><i class="fa-solid fa-check"></i> Historiales Ilimitados</li>
+                    <li><i class="fa-solid fa-check"></i> Cartillas automáticas</li>
+                    <li><i class="fa-solid fa-check"></i> Emisión de recetas</li>
+                </ul>
+                <a href="#contacto" class="btn btn-outline">Empezar</a>
+            </div>
+            <div class="card pricing-card popular">
+                <div class="popular-badge">Más Popular</div>
+                <h3>Clínica</h3>
+                <p class="price-subtitle">Para clínicas en crecimiento</p>
+                <div class="price"><span>S/</span>250<span>/mes</span></div>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> Hasta 3 Médicos</li>
+                    <li><i class="fa-solid fa-check"></i> Usuarios de Recepción</li>
+                    <li><i class="fa-solid fa-check"></i> Soporte Prioritario</li>
+                    <li><i class="fa-solid fa-check"></i> Reportes Clínicos</li>
+                </ul>
+                <a href="#contacto" class="btn btn-primary">Comenzar Ahora</a>
+            </div>
+            <div class="card pricing-card">
+                <h3>Red Veterinaria</h3>
+                <p class="price-subtitle">Para múltiples sedes</p>
+                <div class="price-custom">Personalizado</div>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> Sedes Ilimitadas</li>
+                    <li><i class="fa-solid fa-check"></i> Médicos Ilimitados</li>
+                    <li><i class="fa-solid fa-check"></i> Migración de datos</li>
+                    <li><i class="fa-solid fa-check"></i> Capacitación presencial</li>
+                </ul>
+                <a href="#contacto" class="btn btn-outline">Solicitar Cotización</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VENTAJAS -->
+    <section class="section">
+        <div class="container advantages-container">
+            <div class="advantages-image">
+                <img src="img/vet01.jpg" alt="Veterinario usando VetPass">
+            </div>
+            <div class="advantages-content">
+                <span class="subtitle-orange">HISTORIAL SALUDABLE</span>
+                <h2>Ventajas de VetPass</h2>
+                <div class="divider align-left"></div>
+                <p>Digitalización enfocada en resolver problemas reales de las clínicas peruanas.</p>
+                
+                <div class="advantage-item">
+                    <h4>Cero Pérdidas</h4>
+                    <p>Evita extravíos y deterioro por fragilidad del soporte físico en papel.</p>
+                </div>
+                <div class="advantage-item">
+                    <h4>Información Centralizada</h4>
+                    <p>Termina con la información dispersa entre la clínica y el dueño.</p>
+                </div>
+                <div class="advantage-item">
+                    <h4>Validación Automática</h4>
+                    <p>Reglas exactas para especies predominantes: perros y gatos.</p>
+                </div>
+                <div class="advantage-item">
+                    <h4>Mejor Servicio al Cliente</h4>
+                    <p>Diferénciate ofreciendo al dueño de la mascota tecnología para su móvil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- NOSOTROS (EQUIPO) -->
+    <section id="nosotros" class="section bg-light text-center">
+        <div class="section-header">
+            <h2>Nuestro Equipo</h2>
+            <div class="divider"></div>
+            <p>Construimos productos de software con altos estándares de calidad, verificación continua y diseño centrado en el usuario.</p>
+        </div>
+        <div class="container">
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="img/Nelson.png" alt="Nelson Guerrero">
+                    <div class="team-info">
+                        <span class="role">Ingeniería de Software</span>
+                        <h4>Nelson Guerrero</h4>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="img/Juan.png" alt="Juan Pérez">
+                    <div class="team-info">
+                        <span class="role">Ingeniería de Software</span>
+                        <h4>Juan Pérez</h4>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="img/Angel Berrospi.png" alt="Angel Berrospi">
+                    <div class="team-info">
+                        <span class="role">Ingeniería de Software</span>
+                        <h4>Angel Berrospi</h4>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="img/Joaquin.png" alt="Joaquin Cuba">
+                    <div class="team-info">
+                        <span class="role">Ingeniería de Software</span>
+                        <h4>Joaquin Cuba</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTORES Y FAQ -->
+    <section id="sectores" class="section">
+        <div class="section-header">
+            <h2>Sectores Beneficiados</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container sectors-container">
+            <div class="sectors-image">
+                <img src="img/vet03.jpg" alt="Sectores Mascotas">
+            </div>
+            <div class="sectors-grid">
+                <div class="card sector-card">
+                    <i class="fa-solid fa-house-medical"></i>
+                    <h4>Consultorios</h4>
+                    <p>Prácticas independientes.</p>
+                </div>
+                <div class="card sector-card">
+                    <i class="fa-solid fa-hospital"></i>
+                    <h4>Clínicas Medianas</h4>
+                    <p>Atención integral veterinaria.</p>
+                </div>
+                <div class="card sector-card">
+                    <i class="fa-solid fa-users"></i>
+                    <h4>Dueños</h4>
+                    <p>Padres de mascotas responsables.</p>
+                </div>
+                <div class="card sector-card">
+                    <i class="fa-solid fa-paw"></i>
+                    <h4>Especies</h4>
+                    <p>Caninos y felinos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="container faq-container mt-5">
+            <div class="section-header">
+                <h2>Preguntas frecuentes</h2>
+                <div class="divider"></div>
+                <p>Respuestas rápidas antes de agendar una demo.</p>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿La aplicación incluye facturación o citas?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, quedan fuera del alcance: reserva de citas, módulos de pagos y facturación, gestión de inventario, etc. Nos enfocamos 100% en el historial clínico.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿El dueño de la mascota puede editar su historial?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, el registro y la edición son atribución exclusiva del personal de la clínica. El dueño tiene permisos solo de consulta.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Puedo registrar animales exóticos?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Actualmente la plataforma soporta únicamente las especies canina y felina, por ser las predominantes en la atención veterinaria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section id="contacto" class="section form-footer-bg">
+        <div class="section-header text-center">
+            <h2>¿Listo para Digitalizar tu Clínica Veterinaria?</h2>
+            <div class="divider"></div>
+            <p>Únete a las clínicas que confían en VetPass para proteger la información de sus pacientes y brindar un mejor servicio.</p>
+        </div>
+        
+        <div class="container contact-wrapper">
+            <div class="contact-card">
+                <!-- Lado del Formulario -->
+                <div class="contact-form-side">
+                    <span class="contact-label">DÉJANOS TUS DATOS</span>
+                    <p class="contact-desc">Usa este formulario para consultas, cotizaciones o para solicitar una demo: lo revisamos y te contactamos por correo.</p>
+                    
+                    <form class="vetpass-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input type="text" placeholder="Ej. Juan">
+                            </div>
+                            <div class="form-group">
+                                <label>Apellidos</label>
+                                <input type="text" placeholder="Ej. Pérez">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Correo electrónico</label>
+                            <input type="email" placeholder="juan@clinica.com">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>País</label>
+                                <select>
+                                    <option>Perú</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Departamento o región</label>
+                                <select>
+                                    <option>Lima</option>
+                                    <option>Arequipa</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Mensaje</label>
+                            <textarea rows="4" placeholder="Indica si deseas una demo, número de veterinarios en tu clínica, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Enviar al equipo</button>
+                    </form>
+                </div>
+                
+                <!-- Lado de Información -->
+                <div class="contact-info-side">
+                    <span class="contact-label">CONTÁCTANOS</span>
+                    
+                    <div class="info-block">
+                        <strong>TELÉFONO</strong>
+                        <a href="tel:+5115550100">+51  967 589 450</a>
+                    </div>
+                    
+                    <div class="info-block">
+                        <strong>DIRECCIÓN</strong>
+                        <p>Av. Javier Prado Este 4200, Santiago de Surco — Lima, Perú</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <strong>CORREO</strong>
+                        <a href="mailto:contacto@vetpass.pe">contacto@vetpass.pe</a>
+                    </div>
+                    
+                    <div class="info-block map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.378772895692!2d-76.97980862415174!3d-12.086300442385157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7a0c8b09315%3A0x6a1005fbc3538466!2sAv.%20Javier%20Prado%20Este%204200%2C%20Santiago%20de%20Surco%2015023!5e0!3m2!1ses-419!2spe!4v1700000000000!5m2!1ses-419!2spe" 
+        width="100%" 
+        height="220" 
+        style="border:0; border-radius: 8px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CORPORATIVO -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col-brand">
+                <img src="img/VetPass_logo.png" alt="VetPass Logo">
+                <p>Gestión Inteligente de Información Veterinaria</p>
+                <a href="#" class="github-link">GitHub</a>
+            </div>
+            
+            <div class="footer-col-links">
+                <span class="footer-title">Producto</span>
+                <ul>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#plataforma">Plataforma</a></li>
+                    <li><a href="#planes">Precios</a></li>
+                    <li><a href="#">Seguridad y tecnología</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-links">
+                <span class="footer-title">Empresa</span>
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#sectores">Preguntas frecuentes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 VetPass. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace actualizado a la carpeta javascript/ -->
+    <script src="javascript/i18n.js"></script> 
+    <script src="javascript/script.js"></script>
+</body>
+</html>
