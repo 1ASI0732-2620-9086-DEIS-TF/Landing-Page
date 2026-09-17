@@ -68,6 +68,16 @@ const i18n = {
             step_4_title: 'Consulta Móvil',
             step_4_desc: 'El dueño revisa recetas y el estado de la cartilla desde la app.',
 
+            // Tecnología
+            tech_title: 'Tecnología y confianza',
+            tech_subtitle: 'Construida con altos estándares de calidad y diseño centrado en el usuario.',
+            tech_card_1_title: 'PLATAFORMA WEB',
+            tech_card_1_desc: 'Interfaz optimizada para el flujo de trabajo en la recepción y consultorio de clínicas independientes.',
+            tech_card_2_title: 'ARQUITECTURA CLOUD',
+            tech_card_2_desc: 'Base de datos segura que garantiza respaldo inmediato de historiales y esquemas de vacunación.',
+            tech_card_3_title: 'APP MÓVIL NATIVA',
+            tech_card_3_desc: 'Diseñada específicamente para dueños de mascotas, con UI intuitiva para consulta rápida de recetas y vacunas.',
+
             // Planes
             pricing_title: 'Modelos de Negocio',
             pricing_subtitle: 'Planes adaptados a clínicas veterinarias independientes.',
@@ -99,6 +109,27 @@ const i18n = {
             // Equipo
             team_title: 'Nuestro Equipo',
             team_desc: 'Construimos productos de software con altos estándares de calidad, verificación continua y diseño centrado en el usuario.',
+
+            // Sectores Beneficiados
+            sectors_title: 'Sectores Beneficiados',
+            sector_1_title: 'Consultorios',
+            sector_1_desc: 'Prácticas independientes.',
+            sector_2_title: 'Clínicas Medianas',
+            sector_2_desc: 'Atención integral veterinaria.',
+            sector_3_title: 'Dueños',
+            sector_3_desc: 'Padres de mascotas responsables.',
+            sector_4_title: 'Especies',
+            sector_4_desc: 'Caninos y felinos.',
+
+            // Preguntas Frecuentes
+            faq_title: 'Preguntas frecuentes',
+            faq_subtitle: 'Respuestas rápidas antes de agendar una demo.',
+            faq_q_1: '¿La aplicación incluye facturación o citas?',
+            faq_a_1: 'No, quedan fuera del alcance: reserva de citas, módulos de pagos y facturación, gestión de inventario, etc. Nos enfocamos 100% en el historial clínico.',
+            faq_q_2: '¿El dueño de la mascota puede editar su historial?',
+            faq_a_2: 'No, el registro y la edición son atribución exclusiva del personal de la clínica. El dueño tiene permisos solo de consulta.',
+            faq_q_3: '¿Puedo registrar animales exóticos?',
+            faq_a_3: 'Actualmente la plataforma soporta únicamente las especies canina y felina, por ser las predominantes en la atención veterinaria.',
 
             // Contacto
             contact_hero_title: '¿Listo para Digitalizar tu Clínica Veterinaria?',
@@ -186,6 +217,16 @@ const i18n = {
             step_4_title: 'Mobile Viewing',
             step_4_desc: 'Owners view prescriptions and valid statuses straight on their phones.',
 
+            // Tecnología
+            tech_title: 'Technology & Trust',
+            tech_subtitle: 'Built with high standards of quality and user-centered design.',
+            tech_card_1_title: 'WEB PLATFORM',
+            tech_card_1_desc: 'Interface optimized for daily workflows at front desks and independent clinic rooms.',
+            tech_card_2_title: 'CLOUD ARCHITECTURE',
+            tech_card_2_desc: 'Secure database architecture guaranteeing instant backups for clinical records and immunization schedules.',
+            tech_card_3_title: 'NATIVE MOBILE APP',
+            tech_card_3_desc: 'Designed specifically for pet owners, offering an intuitive UI for quick reviews of prescriptions and vaccines.',
+
             // Planes
             pricing_title: 'Business Models',
             pricing_subtitle: 'Flexible tiers tailored for independent animal practices.',
@@ -217,6 +258,27 @@ const i18n = {
             // Equipo
             team_title: 'Our Team',
             team_desc: 'We build high-standard veterinary software using verified engineering practices and user-centered design.',
+
+            // Sectores Beneficiados
+            sectors_title: 'Benefited Sectors',
+            sector_1_title: 'Solo Practices',
+            sector_1_desc: 'Independent veterinary rooms.',
+            sector_2_title: 'Mid-sized Clinics',
+            sector_2_desc: 'Comprehensive veterinary care.',
+            sector_3_title: 'Pet Owners',
+            sector_3_desc: 'Responsible pet parents.',
+            sector_4_title: 'Species',
+            sector_4_desc: 'Canines and felines.',
+
+            // Preguntas Frecuentes
+            faq_title: 'Frequently Asked Questions',
+            faq_subtitle: 'Quick answers before scheduling a demo.',
+            faq_q_1: 'Does the application include billing or appointment booking?',
+            faq_a_1: 'No, appointment scheduling, billing modules, and inventory management remain outside the project scope. We focus 100% on immunization and clinical history records.',
+            faq_q_2: 'Can the pet owner edit clinical history entries?',
+            faq_a_2: 'No, medical entries and updates are strictly restricted to clinic staff. The owner has read-only access.',
+            faq_q_3: 'Can I register exotic pets?',
+            faq_a_3: 'The platform currently supports canine and feline species only, as they represent the predominant veterinary caseload.',
 
             // Contacto
             contact_hero_title: 'Ready to Digitize Your Veterinary Clinic?',

@@ -1,47 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Lógica para el Acordeón de Preguntas Frecuentes (FAQ)
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        
-        question.addEventListener('click', () => {
-            // Cierra todos los demás
-            faqItems.forEach(otherItem => {
-                if (otherItem !== item) {
-                    otherItem.classList.remove('active');
-                }
-            });
-            // Abre o cierra el actual
-            item.classList.toggle('active');
-        });
-    });
-
-    // Lógica simple para scroll suave en los enlaces del navbar
-    const navLinks = document.querySelectorAll('.nav-menu a, .btn-outline, .btn-primary, .btn-white');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            const targetAttr = this.getAttribute('href');
-            // Solo actuar en enlaces internos que comienzan con "#"
-            if(targetAttr && targetAttr.startsWith('#')) {
-                e.preventDefault();
-                const targetId = targetAttr.substring(1);
-                const targetElement = document.getElementById(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70, // Compensa la altura del navbar fijo
-                        behavior: 'smooth'
-                    });
-                }
-            }
-        });
-    });
-});
-
-// Función para actualizar textos visibles en base al idioma seleccionado
+// Función para actualizar todos los textos según el idioma
 function updatePageContent(lang) {
+    if (typeof i18n === 'undefined') {
+        console.error('El objeto i18n no está definido. Revisa la carga de javascript/i18n.js');
+        return;
+    }
+
     const setText = (selector, key) => {
         const el = document.querySelector(selector);
         if (el) el.textContent = i18n.t(key, lang);
@@ -114,6 +77,19 @@ function updatePageContent(lang) {
         if (desc) desc.textContent = i18n.t(`step_${num}_desc`, lang);
     });
 
+    // Tecnología y confianza
+    setText('#tecnologia .section-header h2', 'tech_title');
+    setText('#tecnologia .section-header p', 'tech_subtitle');
+    const techCards = document.querySelectorAll('#tecnologia .basic-card');
+    if (techCards.length >= 3) {
+        techCards[0].querySelector('h3').textContent = i18n.t('tech_card_1_title', lang);
+        techCards[0].querySelector('p').textContent = i18n.t('tech_card_1_desc', lang);
+        techCards[1].querySelector('h3').textContent = i18n.t('tech_card_2_title', lang);
+        techCards[1].querySelector('p').textContent = i18n.t('tech_card_2_desc', lang);
+        techCards[2].querySelector('h3').textContent = i18n.t('tech_card_3_title', lang);
+        techCards[2].querySelector('p').textContent = i18n.t('tech_card_3_desc', lang);
+    }
+
     // Planes
     setText('#planes .section-header h2', 'pricing_title');
     setText('#planes .section-header p', 'pricing_subtitle');
@@ -151,6 +127,34 @@ function updatePageContent(lang) {
     setText('#nosotros .section-header h2', 'team_title');
     setText('#nosotros .section-header p', 'team_desc');
 
+    // Sectores Beneficiados (Selector corregido y seguro)
+    const sectoresHeader = document.querySelector('#sectores .section-header h2');
+    if (sectoresHeader) sectoresHeader.textContent = i18n.t('sectors_title', lang);
+
+    const sectorCards = document.querySelectorAll('.sector-card');
+    if (sectorCards.length >= 4) {
+        sectorCards[0].querySelector('h4').textContent = i18n.t('sector_1_title', lang);
+        sectorCards[0].querySelector('p').textContent = i18n.t('sector_1_desc', lang);
+        sectorCards[1].querySelector('h4').textContent = i18n.t('sector_2_title', lang);
+        sectorCards[1].querySelector('p').textContent = i18n.t('sector_2_desc', lang);
+        sectorCards[2].querySelector('h4').textContent = i18n.t('sector_3_title', lang);
+        sectorCards[2].querySelector('p').textContent = i18n.t('sector_3_desc', lang);
+        sectorCards[3].querySelector('h4').textContent = i18n.t('sector_4_title', lang);
+        sectorCards[3].querySelector('p').textContent = i18n.t('sector_4_desc', lang);
+    }
+
+    // Preguntas Frecuentes (FAQ)
+    setText('.faq-container .section-header h2', 'faq_title');
+    setText('.faq-container .section-header p', 'faq_subtitle');
+    const faqElements = document.querySelectorAll('.faq-item');
+    faqElements.forEach((item, index) => {
+        const num = index + 1;
+        const questionSpan = item.querySelector('.faq-question span');
+        const answerP = item.querySelector('.faq-answer p');
+        if (questionSpan) questionSpan.textContent = i18n.t(`faq_q_${num}`, lang);
+        if (answerP) answerP.textContent = i18n.t(`faq_a_${num}`, lang);
+    });
+
     // Contacto
     setText('#contacto .section-header h2', 'contact_hero_title');
     setText('#contacto .section-header p', 'contact_hero_sub');
@@ -169,32 +173,91 @@ function updatePageContent(lang) {
     setText('.footer-bottom p', 'footer_copyright');
 }
 
-// Inicializar y cambiar estados visuales de los botones ES / EN
+// Inicialización de eventos al cargar el DOM
 document.addEventListener('DOMContentLoaded', () => {
-    const currentLang = i18n.getLanguage();
-    
-    const updateLangButtons = (lang) => {
+    // 1. Manejo del Idioma
+    if (typeof i18n !== 'undefined') {
+        const currentLang = i18n.getLanguage();
+
+        const updateLangButtons = (lang) => {
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('lang-active');
+                    btn.classList.remove('lang-inactive');
+                } else {
+                    btn.classList.add('lang-inactive');
+                    btn.classList.remove('lang-active');
+                }
+            });
+        };
+
+        updateLangButtons(currentLang);
+        updatePageContent(currentLang);
+
         document.querySelectorAll('.lang-btn').forEach(btn => {
-            if (btn.dataset.lang === lang) {
-                btn.classList.add('lang-active');
-                btn.classList.remove('lang-inactive');
-            } else {
-                btn.classList.add('lang-inactive');
-                btn.classList.remove('lang-active');
+            btn.addEventListener('click', () => {
+                const chosenLang = btn.dataset.lang;
+                if (!chosenLang || chosenLang === i18n.getLanguage()) return;
+                i18n.setLanguage(chosenLang);
+                updateLangButtons(chosenLang);
+                updatePageContent(chosenLang);
+            });
+        });
+    }
+
+    // 2. FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+            question.addEventListener('click', () => {
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) otherItem.classList.remove('active');
+                });
+                item.classList.toggle('active');
+            });
+        }
+    });
+
+    // 3. Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').substring(1);
+            if (!targetId) return;
+            const target = document.getElementById(targetId);
+            if (target) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: target.offsetTop - 80,
+                    behavior: 'smooth'
+                });
             }
         });
-    };
+    });
 
-    updateLangButtons(currentLang);
-    updatePageContent(currentLang);
+    // 4. Navbar scroll shadow
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (navbar) {
+            navbar.style.boxShadow = window.scrollY > 50 
+                ? '0 4px 15px rgba(0, 0, 0, 0.12)' 
+                : '0 2px 6px rgba(0, 0, 0, 0.06)';
+        }
+    });
 
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const chosenLang = btn.dataset.lang;
-            if (!chosenLang || chosenLang === i18n.getLanguage()) return;
-            i18n.setLanguage(chosenLang);
-            updateLangButtons(chosenLang);
-            updatePageContent(chosenLang);
-        });
+    // 5. Botón Volver Arriba
+    const scrollBtn = document.createElement('button');
+    scrollBtn.id = 'scrollTopBtn';
+    scrollBtn.innerHTML = '&#8593;';
+    document.body.appendChild(scrollBtn);
+
+    window.addEventListener('scroll', () => {
+        scrollBtn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+        scrollBtn.style.alignItems = 'center';
+        scrollBtn.style.justifyContent = 'center';
+    });
+
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
